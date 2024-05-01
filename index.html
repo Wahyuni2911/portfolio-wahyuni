@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tentangku</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <section>
+      <div class="navbar">
+        <nav>
+          <a href="index. html" class="logo">Web Profile</a>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#resume">Resume</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </section>
+    <section id="home">
+      <div class="home">
+        <div class="banner">
+          <div class="container">
+            <p class="text-1">My Name Is</p>
+            <p class="name">Wahyuni</p>
+            <p>Welcome To My Portofolio</p>
+            <div class="text">
+              <span class="write-first">Mahasiswa | </span>
+              <div class="animation">
+                <span class="write-sec"> Poliwangi </span>
+              </div>
+
+              <!-- <span>Negeri</span>
+                        <span>Banyuwangi</span> -->
+            </div>
+            <!-- <div class="text">Mahasiswa Politeknik</div>
+                    <ul class="dynamic-text">
+                        <li><span>Negeri</span></li>
+                        <li><span>Banyuwangi</span></li>
+                    </ul> -->
+          </div>
+          <img class="picture" src="assets/yuniii.jpg" alt="gambar" />
+        </div>
+      </div>
+    </section>
+
+    <section id="about">
+      <div class="about">
+        <div class="about-desc">
+          <p>About Me</p>
+          <p>Kenali Lebih dalam Mengenai Aku</p>
+        </div>
+
+        <div class="row">
+          <div class="column">
+            <center>
+              <img
+                class="foto-profil"
+                src="assets/yuni.jpeg"
+                width="300px"
+                alt="gambar"
+              />
+            </center>
+          </div>
+          <div class="column" style="background-color: #f462c8">
+            <p>
+              Perkenalkan namaku Wahyuni, Aku lahir di
+              Banyuwangi pada tanggal 29 November 2002. Aku mahasiswa semester 6 Jurusan Bisnis dan Informatika di Politeknik Negeri Banyuwangi yang memiliki ketertarikan dalam
+              bidang UI/UX dan Front End. Kehidupan sehari-hari sebagai mahasiswa berlatar belakang IT menjadikanku
+              memiliki keterampilan teknologi dan manajemen diri yang baik, serta mampu bekerja dalam tim maupun 
+              individu.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="resume">
+      <div class="resume">
+        <div class="resume-desc">
+          <p>Education</p>
+          <p>check out my Resume</p>
+        </div>
+
+        <div class="box-container">
+          <div class="box-1">
+            <span>1</span>
+            <p>SD Negeri 4 Temuguruh</p>
+          </div>
+          <div class="box-1">
+            <span>2</span>
+            <p>SMP Negeri 3 Sempu</p>
+          </div>
+          <div class="box-1">
+            <span>3</span>
+            <p>SMK Muhammadiyah 1 Genteng</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="contact">
+        <div class="contact-desc">
+          <p>Contact</p>
+          <p>Jangan ragu untuk menghubungi Aku , Apalagi untuk Bertemu</p>
+        </div>
+
+        <form action="form.html">
+          <label for="name">Nama</label>
+          <input type="text" name="nama" id="name" placeholder="" />
+          <label for="email">Email</label>
+          <input type="text" name="email" id="email" placeholder="" />
+          <label for="subject">Subject</label>
+          <input type="text" name="subject" id="subject" placeholder="" />
+
+          <input type="submit" value="submit" />
+        </form>
+      </div>
+    </section>
+
+    <footer>
+      <p>Apakah Tertarik Dengan Portofolio Saya?</p>
+      <p>Mari kita berteman!</p>
+      <div class="social-icons">
+        <a href=""><i class="fa fa-facebook-square"></i></a>
+        <a href=""><i class="fa fa-instagram"></i></a>
+        <a href=""><i class="fa fa-whatsapp"></i></a>
+        <a href=""><i class="fa fa-twitter-square"></i></a>
+      </div>
+    </footer>
+    <script>
+      const huruf = document.querySelector(".write-sec");
+      console.log(huruf);
+      const textBerjalan = () => {
+        setTimeout(() => {
+          huruf.textContent = "Politeknik";
+        }, 0);
+        setTimeout(() => {
+          huruf.textContent = "Negeri";
+        }, 4000);
+        setTimeout(() => {
+          huruf.textContent = "Banyuwangi";
+        }, 8000);
+      };
+
+      textBerjalan();
+      setInterval(textBerjalan, 12000);
+    </script>
+  </body>
+</html>
